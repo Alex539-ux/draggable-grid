@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+ul {
+    padding:20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));    
+    column-gap: 15px;
+    row-gap:15px;
+    justify-content: center;    
+}
+
+@media (min-width: 992px) {
+    ul {
+        grid-template-columns: repeat(3, minmax(200px, 400px));
+    }
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid DarkTurquoise;
+    background: LightCyan;
+    cursor: grab;
+}
+
+/* ... */
+.dragged {
+    opacity: 30%;
+}
+
+/* ... */ 
+.dragover {
+    border: 1px dotted OrangeRed;
+    background: Coral;
+}
